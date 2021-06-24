@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,800;1,300;1,500;1,800&display=swap");
+
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+:root {
+  --color-base0: rgb(18, 4, 32);
+  --color-base1: rgb(26, 8, 44);
+  --color-base2: rgb(37, 4, 54);
+  --color-base3: rgb(62, 0, 95);
+  --color-base4: rgb(43, 41, 44);
+}
+
+* {
+  margin: 0em;
+  padding: 0em;
+  outline: none;
+}
+
+body {
+  background-color: var(--color-base0);
+}
+
+/* --- MENU DE NAVEGAÇÃO --- */
+
+header {
+  /* Aqui serve para fixar Menu superior. * Necessário Margin no Main pra não sobrepor */
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.nav-menu {
+  text-align: center;
+  background-color: var(--color-base1);
+  border-bottom: 2px solid var(--color-base4);
+}
+
+.nav-menu ul li {
+  display: inline-block;
+}
+
+.nav-menu ul li a {
+  display: block;
+  padding: 1.5em .8em;
+  font: 800 1.2em/1 "Montserrat", sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu a:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+/* --- NEXT GAME SECTION --- */
+
+main {
+  margin-top: 5em;
+}
+
+.game-call-p {
+  color: white;
+  text-align: center;
+  font: 700 3em/1 "Montserrat", sans-serif;
+}
+#game-next {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3em;
+  box-sizing: border-box;
+}
+
+.game-img-container img {
+  width: 100%;
+  border: 1px solid var(--color-base3);
+  border-radius: 0.3em;
+  padding: 0.5em;
+  box-sizing: border-box;
+}
+
+.game-call {
+  padding: 1em 0 1.5em 0;
+  font: italic 500 1em/1 "Montserrat", sans-serif;
+  text-align: center;
+  color: white;
+}
+
+.game--date {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.game--date p {
+  font: 700 1em/1 "Montserrat", sans-serif;
+  color: white;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+.game-channel {
+  padding: 1em;
+  margin: 0 auto;
+  font: 700 1em/1 "Montserrat", sans-serif;
+}
+
+.game-channel a{
+  color: white;
+  text-decoration: none;
+}
+
+.game-channel img {
+  margin: 0 .5em 0 0;
+  width: 20px;
+  vertical-align: text-bottom;
+}
+
+.game-channel a:hover{
+  text-decoration: underline;
+}
+
+/* --- HASHTAG --- */
+
+#hashtag {
+  padding: 3em;
+  color: var(--color-base2);
+  background-color: var(--color-base1);
+}
+
+#hashtag p {
+  font: italic 800 10em/1 "Montserrat", sans-serif;
+  text-align: center; 
+  width: 100%;
+}
+
+/* --- NEXT GAMES --- */
+
+.next-call-p {
+  color: white;
+  text-align: center;
+  font: 700 3em/1 "Montserrat", sans-serif;
+}
+
+.next-call {
+  padding: 1em 0 1.5em 0;
+  color: white;
+  text-align: center;
+  font: italic 500 1em/1 "Montserrat", sans-serif;
+}
+
+#coming-next {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3em;
+}
+
+.next-img-container img {
+  width: 100%;
+  border: 1px solid var(--color-base3);
+  border-radius: 0.3em;
+  padding: 0.5em;
+  box-sizing: border-box;
+}
+
+.next--team,
+.next--date {
+  color: white;
+  text-align: center;
+  padding: 0.3em;
+}
+
+.next--team {
+  margin: 0 2em;
+  font: 700 1.5em/1 "Montserrat", sans-serif;
+}
+
+.next--date {
+  font: italic 300 0.8em/1 "Montserrat", sans-serif;
+}
+
+.next-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+
+/* --- FOOTER --- */
+
+#footer {
+  background-color: var(--color-base1);
+  border-top: 2px solid var(--color-base4);
+  padding: 3em;
+}
+
+.channel {
+  text-align: center;
+  font: 600 1em/1 "Montserrat", sans-serif;
+  padding: 0 0 1em 0;
+}
+
+.channel a {
+  color: white;
+  text-decoration: none;
+}
+
+.channel a:hover {
+  text-decoration: underline;
+}
+
+.facebook-icon {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 36px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: white;
+  text-decoration: none;
+}
+
+.social-media {
+  text-align: center;
+  box-sizing: border-box; /* Não esta funcionando */
+  padding-bottom: 1em;
+}
+
+.social-media a {
+  margin: 0 0.2em;
+}
+
+.social-media a:hover {
+  border: 1px solid white;
+  border-radius: 3em;
+}
+
+hr {
+  width: 200px;
+  margin: 0 auto;
+}
+
+footer p {
+  color: white;
+  font: 0.8em/1 "Monospace";
+  font-variant-caps: petite-caps;
+  text-align: center;
+  padding: 1em 0 0 0;
+}
